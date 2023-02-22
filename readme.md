@@ -61,7 +61,7 @@ Performance comparison with other lane detection methods on Tusimple dataset.
 
 Performance comparison with other lane detection methods on CULane dataset.
 
-![](resultculan.png)
+![](resultculane.png)
 
 
 
