@@ -55,13 +55,13 @@ python test.py configs/tusimple.py --test_model path_to_tusimple.pth --test_work
 
 Performance comparison with other lane detection methods on Tusimple dataset.
 
-![](resulttusimple.PNG)
+![](resulttusimple.png)
 
 
 
 Performance comparison with other lane detection methods on CULane dataset.
 
-![](resultculan.PNG)
+![](resultculan.png)
 
 
 
