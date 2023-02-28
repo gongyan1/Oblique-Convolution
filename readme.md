@@ -9,6 +9,14 @@ PyTorch implementation of the paper "Oblique Convolution: A Novel Convolution Id
 
 
 
+![](ORM.PNG)
+ORM architecture. α1, α2, α3, α4, -α1, -α2, -α3, -α4 is the angle obtained by clustering. Group convolution is used to separate them between different angles and finally stitch them together. Through rotating different angles and grouping convolution, the features of all vertical lane lines are obtained.
+
+
+
+![](SSAM.PNG)
+SSAM first performs the maxpooling, and then uses the strip 3 × H deformable convolution with a certain width to directly extract the information of the whole lane and give different pixel points importance.
+
 ## **Changelog**
 
 
