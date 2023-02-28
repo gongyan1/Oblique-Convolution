@@ -15,6 +15,7 @@ ORM architecture. α1, α2, α3, α4, -α1, -α2, -α3, -α4 is the angle obtain
 
 
 ![](SSAM.PNG)
+
 SSAM first performs the maxpooling, and then uses the strip 3 × H deformable convolution with a certain width to directly extract the information of the whole lane and give different pixel points importance.
 
 ## **Changelog**
