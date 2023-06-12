@@ -3,7 +3,7 @@
 
 
 
-![](network1.png)
+![](network0607.png)
 
 PyTorch implementation of the paper "Oblique Convolution: A Novel Convolution Idea for Redefining Lane Detection"
 
