@@ -26,9 +26,9 @@ sim_loss_w = 0.0
 shp_loss_w = 0.0
 
 # EXP
-note = '/root/Ultra-Fast-Lane-Detection/log'
+note = '/root/autodl-tmp/Ultra-Fast-Lane-Detection/log'
 
-log_path = '/root/Ultra-Fast-Lane-Detection/log'
+log_path = '/root/autodl-tmp/Ultra-Fast-Lane-Detection/log'
 
 # FINETUNE or RESUME MODEL PATH
 finetune = None
