@@ -1,9 +1,4 @@
-/*************************************************************************
-	> File Name: evaluate.cpp
-	> Author: Xingang Pan, Jun Li
-	> Mail: px117@ie.cuhk.edu.hk
-	> Created Time: 2016年07月14日 星期四 18时28分45秒
- ************************************************************************/
+
 
 #include "counter.hpp"
 #include "spline.hpp"
