@@ -1,9 +1,4 @@
-/*************************************************************************
-	> File Name: counter.cpp
-	> Author: Xingang Pan, Jun Li
-	> Mail: px117@ie.cuhk.edu.hk
-	> Created Time: Thu Jul 14 20:23:08 2016
- ************************************************************************/
+
 
 #include "counter.hpp"
 
