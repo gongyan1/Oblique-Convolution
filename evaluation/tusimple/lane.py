@@ -2,7 +2,6 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 import json
 
-
 class LaneEval(object):
     lr = LinearRegression()
     pixel_thresh = 20
