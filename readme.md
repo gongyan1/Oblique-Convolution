@@ -12,7 +12,6 @@ PyTorch implementation of the paper "Oblique Convolution: A Novel Convolution Id
 ## **Changelog**
 
 
-
 - [2023-02-22] Release the initial code for SIFDriveNet.
 
 
