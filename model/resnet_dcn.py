@@ -207,31 +207,48 @@ class ResNet_(nn.Module):
         f1 = self.layer1(x)
 
 
-        f1_1, _ = torch.max(f1, dim=1, keepdim=True)
-        f1_1 = F.pad(f1_1, [1, 1, 108, 108])
-        f1_1 = self.conv1(f1_1)
+      
+        f1_2, _ = torch.max(f1, dim=1, keepdim=True)
+        f1_21=f1_2
+        f1_22=f1_2
+        b=torch.cat((f1_21[:,:,54:,:],f1_21),dim=2)
+        b=torch.cat((b,f1_22[:,:,:54,:]),dim=2)
+        f1_1 = self.conv1(b)
         f1 = f1 * f1_1
       
         f2 = self.layer2(f1)
       
-        f2_1, _ = torch.max(f2, dim=1, keepdim=True)
-        f2_1 = F.pad(f2_1, [1, 1, 54, 54])
-        f2_1 = self.conv2(f2_1)
-        f2 = f2 * f2_1
       
+        f2_2, _ = torch.max(f2, dim=1, keepdim=True)
+        f2_21=f2_2
+        f2_22=f2_2
+        b=torch.cat((f2_21[:,:,54:,:],f2_21),dim=2)
+        b=torch.cat((b,f2_22[:,:,:54,:]),dim=2)
+        f2_1 = self.conv2(b)
+        f2 = f2 * f2_1
+
+    
+    
         f3 = self.layer3(f2)
         
-        f3_1, _ = torch.max(f3, dim=1, keepdim=True)
-        f3_1 = F.pad(f3_1, [1, 1, 27, 27])
-        f3_1 = self.conv3(f3_1)
+      
+        f3_2, _ = torch.max(f3, dim=1, keepdim=True)
+        f3_21=f3_2
+        f3_22=f3_2
+        b=torch.cat((f3_21[:,:,54:,:],f3_21),dim=2)
+        b=torch.cat((b,f3_22[:,:,:54,:]),dim=2)
+        f3_1 = self.conv3(b)
         f3 = f3 * f3_1
        
       
         f4 = self.layer4(f3)
       
-        f4_1, _ = torch.max(f4, dim=1, keepdim=True)
-        f4_1 = F.pad(f4_1, [1, 1, 13, 13])
-        f4_1 = self.conv4(f4_1)
+        f4_2, _ = torch.max(f4, dim=1, keepdim=True)
+        f4_21=f4_2
+        f4_22=f4_2
+        b=torch.cat((f4_21[:,:,54:,:],f4_21),dim=2)
+        b=torch.cat((b,f4_22[:,:,:54,:]),dim=2)
+        f4_1 = self.conv4(b)
         f4 = f4 * f4_1
        
     
@@ -301,8 +318,4 @@ def resnet152(pretrained=False, **kwargs):
     if pretrained:
         model.load_state_dict(model_zoo.load_url(model_urls["resnet152"]))
     return model
-'''
-ccc=CBRP().cuda()
-a=resnet34(pretrained=False).cuda()
-b=torch.randn([1,3,288,800]).cuda()
-b=a(ccc(b))'''
+
