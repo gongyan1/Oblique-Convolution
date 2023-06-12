@@ -4,6 +4,7 @@ from utils.config import Config
 import torch
 import time
 
+
 def str2bool(v):
     if isinstance(v, bool):
        return v
