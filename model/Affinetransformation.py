@@ -9,7 +9,6 @@ from .try_conv import model_self,model_self1
 from torch.autograd import Variable
 
 
-
 class Affinetrans2(nn.Module):
     def __init__(self,model,k_list,down,channel_list):
         super(Affinetrans2, self).__init__()
