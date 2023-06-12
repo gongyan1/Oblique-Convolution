@@ -12,7 +12,7 @@
 using namespace std;
 using namespace cv;
 
-// before coming to use functions of this class, the lanes should resize to im_width and im_height using resize_lane() in lane_compare.hpp
+
 class Counter
 {
 	public:
