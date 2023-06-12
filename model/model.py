@@ -74,7 +74,7 @@ class parsingNet3(torch.nn.Module):
             torch.nn.ReLU(),
             torch.nn.Linear(2048, self.total_dim),
         )
-        self.pool = torch.nn.Conv2d(512,8,1) if backbone in ['34','18','self'] else torch.nn.Conv2d(2048,8,1) # 加RCCA是128，否则是512
+        self.pool = torch.nn.Conv2d(512,8,1) if backbone in ['34','18','self'] else torch.nn.Conv2d(2048,8,1) 
        
         initialize_weights(self.cls)
     def forward(self, x):
