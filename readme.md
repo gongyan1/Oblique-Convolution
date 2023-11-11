@@ -7,6 +7,7 @@
 
 PyTorch implementation of the paper "Oblique Convolution: A Novel Convolution Idea for Redefining Lane Detection"
 
+Paper is available at https://ieeexplore.ieee.org/document/10264148.
 
 
 ## **Changelog**
