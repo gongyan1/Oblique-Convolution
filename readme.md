@@ -7,7 +7,7 @@
 
 PyTorch implementation of the paper "Oblique Convolution: A Novel Convolution Idea for Redefining Lane Detection"
 
-This paper is published at [IEEE Transactions on Intelligent Vehicles]([https://www.runoob.com](https://ieeexplore.ieee.org/document/10264148))
+This paper is published at IEEE Transactions on Intelligent Vehicles. [Link](https://ieeexplore.ieee.org/document/10264148)
 
 ## **Changelog**
 
