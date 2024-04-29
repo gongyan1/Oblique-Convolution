@@ -89,8 +89,14 @@ Performance comparison with other lane detection methods on CULane dataset.
 ![](resultculane.png)
 
 
-
-
+## 四、Reference
+@article{zhang2023oblique,
+  title={Oblique Convolution: A Novel Convolution Idea for Redefining Lane Detection},
+  author={Zhang, Xinyu and Gong, Yan and Lu, Jianli and Li, Zhiwei and Li, Shixiang and Wang, Shu and Liu, Wenzhuo and Wang, Li and Li, Jun},
+  journal={IEEE Transactions on Intelligent Vehicles},
+  year={2023},
+  publisher={IEEE}
+}
 
 
 
